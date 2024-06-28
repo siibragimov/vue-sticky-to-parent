@@ -2,7 +2,7 @@
 
 Makes block sticky to it's parent block. To see how it works, plaese, see the demo.
 
-![Demo]('/public/demo.webp')
+![Demo](/public/demo.webp)
 
 ## Installation and setup
 
@@ -34,7 +34,7 @@ For Nuxt 3:
   });
 ```
 
-### 3. Define styles for block(Sidebar) container. See the [`App.vue`]('./src/App.vue').
+### 3. Define styles for block(Sidebar) container. See the [`App.vue`](/src/App.vue).
 
 **Note**: the `.container` should have full height of the column, component sticks to it and moves _"inside"_ it.
 
