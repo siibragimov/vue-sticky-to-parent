@@ -2,7 +2,7 @@
 
 Makes block sticky to it's parent block. To see how it works, plaese, see the demo.
 
-![Demo]('./public/demo.webp')
+![Demo]('/public/demo.webp')
 
 ## Installation and setup
 
