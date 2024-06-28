@@ -1,0 +1,34 @@
+{
+  "name": "vue-sticky-to-parent",
+  "author": {
+    "name": "sayid.i"
+  },
+  "version": "1.0.0",
+  "type": "module",
+  "files": ["dist"],
+  "main": "./dist/vue-sticky-to-parent.umd.cjs",
+  "module": "./dist/vue-sticky-to-parent.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-sticky-to-parent.js",
+      "require": "./dist/vue-sticky-to-parent.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vueuse/core": "^10.11.0",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vue-tsc": "^2.0.6"
+  }
+}
