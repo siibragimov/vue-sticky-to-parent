@@ -1,5 +1,6 @@
 {
   "name": "vue-sticky-to-parent",
+  "public": true,
   "author": {
     "name": "sayid.ibragimov"
   },
@@ -20,9 +21,10 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "build": "vue-tsc && vite build && npm run types && npm run rename-types",
     "preview": "vite preview",
-    "types": "vue-tsc lib/main.ts src/global.d.ts --declaration --allowJs --checkJs --emitDeclarationOnly --skipLibCheck --rootDir . --outFile dist/vue-sticky-to-parent.d.ts"
+    "types": "vue-tsc lib/main.ts src/global.d.ts --declaration --allowJs --checkJs --emitDeclarationOnly --skipLibCheck --rootDir . --outFile dist/vue-sticky-to-parent.d.ts",
+    "rename-types": "node scripts/rename-module.js"
   },
   "dependencies": {
     "@vueuse/core": "^10.11.0",
