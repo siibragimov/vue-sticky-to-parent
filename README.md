@@ -24,21 +24,29 @@ pnpm add vue-sticky-to-parent
 For Vue 3:
 ```javascript
   // in entry point (main.js)
-  import '~/node_modules/vue-sticky-to-parent/style.css';
+  import '../node_modules/vue-sticky-to-parent/dist/style.css';
 ```
 For Nuxt 3:
 ```javascript
   // nuxt.config.ts
   export default defineNuxtConfig({
-    css: ['~/node_modules/vue-sticky-to-parent/style.css'],
+    css: ['~/node_modules/vue-sticky-to-parent/dist/style.css'],
   });
 ```
+**Note**: If you have problems with import, check the file path and especially the prefix.
+
 
 ### 3. Define styles for block(Sidebar) container. See the [`App.vue`](/src/App.vue).
 
 **Note**: the `.container` should have full height of the column, component sticks to it and moves _"inside"_ it.
 
 ### 4. Wrap content you want to be sticky.
+Define `ref` for the parent container and pass it to `vue-sticky-to-parent` component props.
+
+```javascript
+  const container = ref<HTMLElement>();
+```
+
 Example:
 ```javascript
 <aside ref="container" class="container">
@@ -50,7 +58,7 @@ Example:
 </aside>
 ```
 
-## Contibuting
+## Contributing
 
 To run in development mode 
 ```shell
@@ -62,3 +70,8 @@ Use for build component
 npm run build
 ```
 and follow instruction in console to open the test page.
+
+To generate types you can use:
+```shell
+npm run types
+```

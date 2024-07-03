@@ -1,13 +1,16 @@
 {
   "name": "vue-sticky-to-parent",
   "author": {
-    "name": "sayid.i"
+    "name": "sayid.ibragimov"
   },
   "version": "1.0.0",
   "type": "module",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/vue-sticky-to-parent.umd.cjs",
   "module": "./dist/vue-sticky-to-parent.js",
+  "types": "./dist/vue-sticky-to-parent.d.ts",
   "exports": {
     ".": {
       "import": "./dist/vue-sticky-to-parent.js",
@@ -18,7 +21,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "types": "vue-tsc lib/main.ts src/global.d.ts --declaration --allowJs --checkJs --emitDeclarationOnly --skipLibCheck --rootDir . --outFile dist/vue-sticky-to-parent.d.ts"
   },
   "dependencies": {
     "@vueuse/core": "^10.11.0",
@@ -29,6 +33,6 @@
     "@vitejs/plugin-vue": "^5.0.4",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
-    "vue-tsc": "^2.0.6"
+    "vue-tsc": "^2.0.24"
   }
 }
