@@ -2,10 +2,15 @@
   "name": "vue-sticky-to-parent",
   "public": true,
   "author": "sayid.ibragimov",
-  "version": "1.0.0",
+  "license": "MIT",
+  "version": "1.0.1",
   "type": "module",
   "files": [
-    "dist"
+    "dist",
+    "lib",
+    "LICENSE",
+    "README.md",
+    "package.json"
   ],
   "main": "./dist/vue-sticky-to-parent.umd.cjs",
   "module": "./dist/vue-sticky-to-parent.js",
@@ -37,7 +42,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/siibragimov/vue-sticky-to-parent"
+    "url": "git+https://github.com/siibragimov/vue-sticky-to-parent.git"
   },
   "homepage": "https://github.com/siibragimov/vue-sticky-to-parent#readme",
   "bugs": {
