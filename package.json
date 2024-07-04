@@ -1,9 +1,7 @@
 {
   "name": "vue-sticky-to-parent",
   "public": true,
-  "author": {
-    "name": "sayid.ibragimov"
-  },
+  "author": "sayid.ibragimov",
   "version": "1.0.0",
   "type": "module",
   "files": [
@@ -36,5 +34,19 @@
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
     "vue-tsc": "^2.0.24"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siibragimov/vue-sticky-to-parent"
+  },
+  "homepage": "https://github.com/siibragimov/vue-sticky-to-parent#readme",
+  "bugs": {
+    "url": "https://github.com/siibragimov/vue-sticky-to-parent/issues"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "nuxt3",
+    "typescript"
+  ]
 }
