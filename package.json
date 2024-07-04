@@ -3,7 +3,7 @@
   "public": true,
   "author": "sayid.ibragimov",
   "license": "MIT",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "files": [
     "dist",
@@ -25,6 +25,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build && npm run types && npm run rename-types",
+    "postbuild": "rimraf dist/demo.webp dist/vite.svg",
     "preview": "vite preview",
     "types": "vue-tsc lib/main.ts src/global.d.ts --declaration --allowJs --checkJs --emitDeclarationOnly --skipLibCheck --rootDir . --outFile dist/vue-sticky-to-parent.d.ts",
     "rename-types": "node scripts/rename-module.js"
@@ -36,6 +37,7 @@
   "devDependencies": {
     "@types/node": "^20.14.2",
     "@vitejs/plugin-vue": "^5.0.4",
+    "rimraf": "^5.0.7",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
     "vue-tsc": "^2.0.24"
