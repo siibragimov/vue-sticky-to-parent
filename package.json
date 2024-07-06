@@ -28,7 +28,10 @@
     "postbuild": "rimraf dist/demo.webp dist/vite.svg",
     "preview": "vite preview",
     "types": "vue-tsc lib/main.ts src/global.d.ts --declaration --allowJs --checkJs --emitDeclarationOnly --skipLibCheck --rootDir . --outFile dist/vue-sticky-to-parent.d.ts",
-    "rename-types": "node scripts/rename-module.js"
+    "rename-types": "node scripts/rename-module.js",
+    "npm:publish": "npm publish --provenance --access public",
+    "github:package": "node scripts/rewrite-package.js",
+    "github:publish": "npm publish --scope=@siibragimov --registry=https://npm.pkg.github.com/ --provenance --access public"
   },
   "dependencies": {
     "@vueuse/core": "^10.11.0",

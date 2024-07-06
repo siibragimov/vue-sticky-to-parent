@@ -2,12 +2,12 @@
 
 Makes block sticky to it's parent block. To see how it works, plaese, see the demo.
 
-![Demo](/public/demo.webp)
+![Demo](https://raw.github.com/siibragimov/vue-sticky-to-parent/main/public/demo.webp)
 
 ## Installation and setup
 
 ### 1. Install component:
-
+If you want to install package from __npmjs registry__ use:
 ```shell
 npm i vue-sticky-to-parent
 ```
@@ -18,6 +18,16 @@ yarn add vue-sticky-to-parent
 
 ```shell
 pnpm add vue-sticky-to-parent
+```
+
+If you want to install package from __GitHub packages__ use: 
+
+```shell
+npm install @siibragimov/vue-sticky-to-parent
+```
+**Note**: Don't forget to configure registry. Use __.npmrc__ file or use command:
+```shell
+npm config set registry https://npm.pkg.github.com/
 ```
 
 ### 2. Import CSS.
@@ -69,7 +79,7 @@ Use for build component
 ```shell
 npm run build
 ```
-and follow instruction in console to open the test page.
+and follow the instruction in console to open the test page.
 
 To generate types you can use:
 ```shell
