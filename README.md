@@ -1,13 +1,17 @@
 # Vue 3 and Nuxt 3 compatible sticky block component
 
-Makes block sticky to it's parent block. To see how it works, plaese, see the demo.
+[![npm version](https://badge.fury.io/js/vue-sticky-to-parent.svg)](https://badge.fury.io/js/vue-sticky-to-parent)
+[![Github Package](https://github.com/siibragimov/vue-sticky-to-parent/actions/workflows/npm-publish-github-packages.yml/badge.svg)](https://github.com/siibragimov/vue-sticky-to-parent/actions/workflows/npm-publish-github-packages.yml)
+[![Node.js Package](https://github.com/siibragimov/vue-sticky-to-parent/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/siibragimov/vue-sticky-to-parent/actions/workflows/npm-publish.yml)
+
+Makes block sticky to it's parent block. To see how it works, please, see the demo.
 
 ![Demo](https://raw.github.com/siibragimov/vue-sticky-to-parent/main/public/demo.webp)
 
 ## Installation and setup
 
 ### 1. Install component:
-If you want to install package from __npmjs registry__ use:
+If you want to install package from __npmjs registry__(recommended) use:
 ```shell
 npm i vue-sticky-to-parent
 ```
@@ -25,7 +29,7 @@ If you want to install package from __GitHub packages__ use:
 ```shell
 npm install @siibragimov/vue-sticky-to-parent
 ```
-**Note**: Don't forget to configure registry. Use __.npmrc__ file or use command:
+**Note**: Don't forget to configure registry for installing packages from GitHub. Use __.npmrc__ file or use command:
 ```shell
 npm config set registry https://npm.pkg.github.com/
 ```
@@ -50,7 +54,14 @@ For Nuxt 3:
 
 **Note**: the `.container` should have full height of the column, component sticks to it and moves _"inside"_ it.
 
-### 4. Wrap content you want to be sticky.
+
+### 4. Import component in your code:
+```javascript
+import { VueStickyToParent } from 'vue-sticky-to-parent'
+```
+
+
+### 5. Wrap content you want to be sticky.
 Define `ref` for the parent container and pass it to `vue-sticky-to-parent` component props.
 
 ```javascript

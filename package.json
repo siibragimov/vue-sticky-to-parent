@@ -3,7 +3,7 @@
   "public": true,
   "author": "sayid.ibragimov",
   "license": "MIT",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "module",
   "files": [
     "dist",
@@ -57,6 +57,18 @@
     "vue",
     "vue3",
     "nuxt3",
-    "typescript"
+    "typescript",
+    "sticky",
+    "sticky-smooth",
+    "sticky-to-parent",
+    "sticky-elements",
+    "sticky-sidebar",
+    "sticky-header",
+    "sticky-footer",
+    "sticky-scroll",
+    "sticky-navbar",
+    "sticky-navigation-bar",
+    "sticky-menu",
+    "parallax"
   ]
 }
