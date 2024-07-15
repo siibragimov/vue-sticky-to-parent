@@ -3,7 +3,7 @@
   "public": true,
   "author": "sayid.ibragimov",
   "license": "MIT",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "files": [
     "dist",
