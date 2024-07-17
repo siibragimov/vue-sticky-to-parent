@@ -5,6 +5,7 @@ Makes block sticky to it's parent block. To see how it works, please, see the de
 [![npm version](https://badge.fury.io/js/vue-sticky-to-parent.svg)](https://badge.fury.io/js/vue-sticky-to-parent)
 [![Github Package](https://github.com/siibragimov/vue-sticky-to-parent/actions/workflows/npm-publish-github-packages.yml/badge.svg)](https://github.com/siibragimov/vue-sticky-to-parent/actions/workflows/npm-publish-github-packages.yml)
 [![Node.js Package](https://github.com/siibragimov/vue-sticky-to-parent/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/siibragimov/vue-sticky-to-parent/actions/workflows/npm-publish.yml)
+[![Bundle size](https://badgen.net/bundlephobia/minzip/vue-sticky-to-parent)](https://bundlephobia.com/package/vue-sticky-to-parent)
 
 ![Demo](https://raw.github.com/siibragimov/vue-sticky-to-parent/main/public/demo.webp)
 
